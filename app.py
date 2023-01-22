@@ -7,7 +7,7 @@ count_vec = CountVectorizer(tokenizer=ptk)
 tfidf = TfidfTransformer()
 
 
-filename = 'spammodel.pkl'
+filename = 'FakeNewsModel.pkl'
 model = pickle.load(open(filename, 'rb'))
 count_vec = pickle.load(open('count_vec.pkl','rb'))
 app = Flask(__name__)
